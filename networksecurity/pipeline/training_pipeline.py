@@ -24,16 +24,16 @@ from networksecurity.entity.artifact_entity import (
     ModelTrainerArtifact,
 )
 
-#from networksecurity.constant.training_pipeline import TRAINING_BUCKET_NAME
-#from networksecurity.cloud.s3_syncer import S3Sync
-#from networksecurity.constant.training_pipeline import SAVED_MODEL_DIR
-#import sys
+from networksecurity.constant.training_pipeline import TRAINING_BUCKET_NAME
+from networksecurity.cloud.s3_syncer import S3Sync
+from networksecurity.constant.training_pipeline import SAVED_MODEL_DIR
+
 
 
 class TrainingPipeline:
     def __init__(self):
         self.training_pipeline_config=TrainingPipelineConfig()
-        #self.s3_sync = S3Sync()
+        self.s3_sync = S3Sync()
         
 
     def start_data_ingestion(self):
@@ -87,7 +87,7 @@ class TrainingPipeline:
         except Exception as e:
             raise NetworkSecurityException(e, sys)
         
-    '''
+    
     ## local artifact is going to s3 bucket    
     def sync_artifact_dir_to_s3(self):
         try:
@@ -105,7 +105,7 @@ class TrainingPipeline:
         except Exception as e:
             raise NetworkSecurityException(e,sys)
         
-    ''' 
+    
     
     def run_pipeline(self):
         try:
