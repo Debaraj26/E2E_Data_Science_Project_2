@@ -1,6 +1,0 @@
-[ 2025-02-16 23:50:31,585 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2025-02-16 23:50:31,590 ] 107 dagshub - INFO - Accessing as debaraj.barpujari.26
-[ 2025-02-16 23:50:32,055 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/debaraj.barpujari.26/E2E_Data_Science_Project_2 "HTTP/1.1 200 OK"
-[ 2025-02-16 23:50:32,486 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2025-02-16 23:50:32,488 ] 107 dagshub - INFO - Initialized MLflow to track repo "debaraj.barpujari.26/E2E_Data_Science_Project_2"
-[ 2025-02-16 23:50:32,489 ] 107 dagshub - INFO - Repository debaraj.barpujari.26/E2E_Data_Science_Project_2 initialized!
